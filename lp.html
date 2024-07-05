@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML & CSS - Flipstuck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+        a{text-decoration: none;}
+
+        .box-project{
+            color: #000;
+            display: flex;
+            border: 1px solid;
+            margin: 20px 0;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: justify;
+            padding: 15px;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .box-project img{
+            width: 73px;
+            height: 100px;
+        }
+
+        #top-container{
+            background-color: #212121;
+        }
+        .content{
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            padding: 50px 10px 50px 10px;
+            min-height: 100vh;
+        }
+        h1{font-weight: 500; margin-bottom: 60px}
+        .para-head{
+            font-size: 18px; 
+            padding: 30px 0 30px 0; 
+            line-height: 1.5;
+        }
+        h1, .para-head {
+            color: #fff;
+        }
+        .highlight {
+            color: #04FF8C;
+        }
+        .banner{
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0 20px 0 20px;
+        }
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+      
+        .btn {
+            background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+            width: 100%;
+            padding: 15px 0 15px 0;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 60px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border: none;
+            border: 2px solid #fff;
+        }
+
+        .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .mid-container {
+            background-color: #fff;
+        }
+        h2{
+            font-size: 32px;
+        }
+        .grid{
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            border-radius: 8px;
+            background-color: #fde7ea;
+            padding: 30px 20px;
+            margin: 4px;
+            width: 40%;
+        }
+        .box img {
+            width: 72px;
+        }
+        .content-box{
+            font-size: 22px;
+            text-align: left;
+            border: 1px solid gray;
+            max-width: 350px;
+            border-radius: 8px;
+            padding: 20px;
+            margin: auto;
+            line-height: 1.8;
+            box-shadow: 6px 6px 0px rgb(76 76 76);
+            margin-top: 25px;
+        }
+        p.heading {
+            font-weight: 600;
+        }
+        .content-box .item {
+            color: rgb(80, 80, 80);
+        }
+        .faqbox{
+            text-align: left;
+            max-width: 100%;
+            margin: 20px;
+        }
+
+        footer{
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            padding: 6px;
+        }
+	footer a{text-decoration: none;}
+        .elementor-size-default{
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .grid{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            border-radius: 8px;
+            background-color: #fde7ea;
+            padding: 30px 20px;
+            margin: 4px;
+            width: 100%;
+        }
+}
+    </style>
+</head>
+<body>
+    <div id="top-container">
+        <div class="content">
+    <h1>
+        Learn <span class="highlight">HTML</span> & <span class="highlight">CSS!</span><br/><br/>
+        Choose any of the Following <span class="highlight"><br/> The Odin Project or FreeCodeCamp
+        </span>
+    </h1>
+    
+    <a href="https://www.theodinproject.com/">
+    <div class="box-project">
+        <img src="https://www.theodinproject.com/assets/icons/odin-icon-a34029cd84a741be4da27758dafd7d7ac3729021adea3e0701e310d91e5c1d04.svg" alt="">
+        <div>
+            <p><b>The Odin Project</b></p><br/>
+            <p>The Odin Project is an open-source online curriculum designed to teach web development. It offers a comprehensive path to becoming a full-stack developer, covering HTML, CSS, JavaScript, Git, Node.js, Ruby on Rails, and more. The curriculum emphasizes hands-on projects, collaborative learning, and community support, making it accessible to beginners and those looking to deepen their programming skills. The Odin Project is free and continually updated, reflecting current industry practices and technologies.</p>
+        </div>
+    </div>
+</a>
+
+    <a href="https://www.freecodecamp.org/">
+    <div class="box-project">
+        <img src="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg" alt="">
+        <div>
+            <p><b>The FreeCodeCamp</b></p><br/>
+            <p>FreeCodeCamp is a nonprofit organization offering free, self-paced coding education through an interactive platform. It provides a comprehensive curriculum covering web development, including HTML, CSS, JavaScript, front-end libraries, data visualization, APIs, and more. Learners can earn certifications by completing projects and coding challenges. FreeCodeCamp also emphasizes real-world experience through contributing to open-source projects and building nonprofit projects, fostering a supportive community for learners worldwide.</p>
+        </div>
+    </div>
+</a>
+   
+</div>
+</div>
+
+
+<footer>
+    <p style="text-align: left; font-size: 14px;">This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward. All of my terms, privacy policies and disclaimers for this program and website can be accessed via the links. I feel transparency is important and I hold ourselves (you & me) to a high standard of integrity</p>
+
+    <h2 class="elementor-heading-title elementor-size-default"><a href='/terms-conditions'>Terms &amp; Conditions</a> | 
+        <a href='/privacy-policy'>Privacy Policy</a> |
+        <a href='/disclaimer'>Disclaimer</a>
+        <br>
+        2024 © Flipstuck Marketing 
+        </h2>
+</footer>
+
+</body>
+</html>

@@ -1,10 +1,295 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>TenOwl - Latest Tech News</title>
-      <meta http-equiv="refresh" content="0; url = https://tenowl.tistory.com" />
-   </head>
-   <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML & CSS - Flipstuck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+        #top-container{
+            background-color: #212121;
+        }
+        .content{
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            padding: 50px 10px 50px 10px;
+        }
+        h1{font-weight: 500;}
+        .para-head{
+            font-size: 18px; 
+            padding: 30px 0 30px 0; 
+            line-height: 1.5;
+        }
+        h1, .para-head {
+            color: #fff;
+        }
+        .highlight {
+            color: #04FF8C;
+        }
+        .banner{
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0 20px 0 20px;
+        }
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
       
-   </body>
+        .btn {
+            background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+            width: 100%;
+            padding: 15px 0 15px 0;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 60px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border: none;
+            border: 2px solid #fff;
+        }
+
+        .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .mid-container {
+            background-color: #fff;
+        }
+        h2{
+            font-size: 32px;
+        }
+        .grid{
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            border-radius: 8px;
+            background-color: #fde7ea;
+            padding: 30px 20px;
+            margin: 4px;
+            width: 40%;
+        }
+        .box img {
+            width: 72px;
+        }
+        .content-box{
+            font-size: 22px;
+            text-align: left;
+            border: 1px solid gray;
+            max-width: 350px;
+            border-radius: 8px;
+            padding: 20px;
+            margin: auto;
+            line-height: 1.8;
+            box-shadow: 6px 6px 0px rgb(76 76 76);
+            margin-top: 25px;
+        }
+        p.heading {
+            font-weight: 600;
+        }
+        .content-box .item {
+            color: rgb(80, 80, 80);
+        }
+        .faqbox{
+            text-align: left;
+            max-width: 100%;
+            margin: 20px;
+        }
+
+        footer{
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            padding: 6px;
+        }
+	footer a{text-decoration: none;}
+        .elementor-size-default{
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .grid{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            border-radius: 8px;
+            background-color: #fde7ea;
+            padding: 30px 20px;
+            margin: 4px;
+            width: 100%;
+        }
+}
+    </style>
+</head>
+<body>
+    <div id="top-container">
+        <div class="content">
+    <h1>
+        Learn <span class="highlight">HTML</span> & <span class="highlight">CSS!</span><br/>
+        Create <span class="highlight">Awesome & Beautiful<br/> 
+        </span> websites
+    </h1>
+    <p class="para-head">
+        Master Advance concepts of HTML & CSS to create frontend designs of<br/> 
+        websites like <span class="highlight">Video Streaming and Social Network Websites</span>! The must have bootcamp in 2024.
+    </p>
+    <div class="banner">
+        <img src="./images/banner-html-css.jpg" alt="" srcset="">
+    </div>
+    <p class="para-head" style="padding-bottom: 20px">Learn <span class="highlight">"How to Create Awesome Websites" </span>Now!</p>
+    <div class="btn-box">
+        <a href="./lp.html"><button class="btn">Learn Now!</button></a>
+    </div>
+</div>
+</div>
+
+<div class="mid-container">
+    <div class="content">
+        <h2>We have designed a<br/> flexible program for you</h2>
+        <div class="grid">
+            <div class="box"  style="background-color: #fde7ea;">
+                <img src="https://www.flipstuck.com/wp-content/uploads/2024/04/hd.svg" alt=""><br/>
+                <b>Have Doubts</b>
+                <p>Fear not we will 100% try to solve your doubt!</p> 
+            </div>
+
+            <div class="box" style="background-color: #e7f3ff;">
+                <img src="https://www.flipstuck.com/wp-content/uploads/2024/04/wtr.svg" alt=""><br/>
+                <b>Get Certificate!</b>
+                <p>Receive a shareable certificate after the completion of classes</p> 
+            </div>
+
+            <div class="box" style="background-color: #e7f9e7;">
+                <img src="https://www.flipstuck.com/wp-content/uploads/2024/04/time.svg" alt=""><br/>
+                <b>All Recorded classes</b>
+                <p>Watch all the recorded videos and clear your doubts instantly.</p> 
+            </div>
+
+            <div class="box" style="background-color: #eff2ff;">
+                <img src="https://www.flipstuck.com/wp-content/uploads/2024/04/project.svg" alt=""><br/>
+                <b>Project-based Learning</b>
+                <p>An immersive project-based curriculum focused on practical developer skills.</p> 
+            </div>
+        </div>
+        <br/>
+        <h2>What exactly we will learn & build?</h2>
+        <div class="content-box">
+            <p class="heading">✅ Intro to HTML</p>
+            <div class="item">Chapter 1 - Getting Started</div>
+            <div class="item">Chapter 2 - Head Element</div>
+            <div class="item">Chapter 3 - Text Basics</div>
+            <div class="item">Chapter 4 - List Types</div>
+            <div class="item">Chapter 5 - Add Links</div>
+            <div class="item">Chapter 6 - Add Images</div>
+            <div class="item">Chapter 7 - Semantic Tags</div>
+            <div class="item">Chapter 8 - Create Tables</div>
+            <div class="item">Chapter 9 - Forms & Inputs</div>
+            <div class="item">Chapter 10 - HTML Project</div>
+        </div>
+
+        <div class="content-box">
+            <p class="heading">✅ Intro to CSS</p>
+            <div class="item">Chapter 1: Start Here</div>
+            <div class="item">Chapter 2: Selectors</div>
+            <div class="item">Chapter 3: Colors</div>
+	    <div class="item">Chapter 4: Animations</div>
+            <div class="item">Chapter 5: Box Model</div>
+            <div class="item">Chapter 6: Functions</div>
+            <div class="item">Chapter 7: Styling Links</div>
+            <div class="item">Chapter 8: List Styles</div>
+            <div class="item">Chapter 9: Mini Project</div>
+            <div class="item">Chapter 10: Display</div>
+            <div class="item">Chapter 11: Floats</div>
+            <div class="item">Chapter 12: Columns</div>
+            <div class="item">Chapter 13: Position</div>
+            <div class="item">Chapter 14: Flexbox</div>
+            <div class="item">Chapter 15: Grid Layout</div>
+            <div class="item">Chapter 16: Images</div>
+            <div class="item">Chapter 17: Media Queries</div>
+            <div class="item">Chapter 18: Card Project</div>
+            <div class="item">Chapter 19: Pseudo</div>
+            <div class="item">Chapter 20: Variables</div>
+        </div><br/><br/>
+        <div class="btn-box" style="margin: 20px 0;">
+            <a href="./lp.html"><button class="btn">Learn Now!</button></a>
+        </div>
+
+        <h2>We have designed a<br/> flexible program for you</h2>
+        <div class="grid">
+            <div class="box"  style="background-color: #fde7ea;">
+                👉 I am a student and I want to kickstart my web dev journey.
+            </div>
+
+            <div class="box" style="background-color: #e7f3ff;">
+                👉 I have been learning web dev for a while now but still I am confused!
+            </div>
+
+            <div class="box" style="background-color: #e7f9e7;">
+                👉 I am an aspiring web developer but I have no clue on where to start from.
+            </div>
+
+            <div class="box" style="background-color: #eff2ff;">
+                👉 I am in job and I want to switch my profile as a full stack developer
+            </div>
+        </div>
+
+        <h2>Certificate of Completion!</h2><br>
+        <img src="https://www.flipstuck.com/wp-content/uploads/2024/04/of-Completion-768x543.jpg" alt="" width="100%">
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <b>1. How does the program work?</b><br/>
+            <p>The program is a recorded course where you can watch all sessions in real-time. The course offers an immersive learning experience to acquire knowledge and skills for web development.</p>
+            <br/><br/>
+            <b>2. How will I access the content?</b><br/>
+            <p>After successful registration you will redirected to the Course Homepage.</p>
+            <br/><br/>
+            <b>3. I am not from computer science background!</b><br>
+            <p>The goal of this program is to help you start your journey in Web development no matter of your background.</p>
+        </div>
+    </div>
+   
+</div>
+<footer>
+    <p style="text-align: left; font-size: 14px;">This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward. All of my terms, privacy policies and disclaimers for this program and website can be accessed via the links. I feel transparency is important and I hold ourselves (you & me) to a high standard of integrity</p>
+
+    <h2 class="elementor-heading-title elementor-size-default"><a href="./terms-conditions.html">Terms &amp; Conditions</a> | 
+        <a href="./privacy-policy.html">Privacy Policy</a> |
+        <a href="./disclaimer.html">Disclaimer</a> |
+	<a href="./contact-us.html">Contact Us</a>
+        <br>
+        2024 © Flipstuck Marketing 
+        </h2>
+</footer>
+
+</body>
 </html>
